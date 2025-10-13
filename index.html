@@ -9,22 +9,120 @@
 <body>
     <div class="container">
         <header>
-            <header-nav>
-                <header-nav-log>
+            <div class="header-logo-contacts">
+                <div class="header-nav-logo">
                     <img src="img/logo.svg" alt="log">
                     <h1>FromBoards Delivery</h1>
-                </header-nav-log>
-                <header-nav-links>
+                </div>
+                <div class="header-contacs">
+                    <div class="header-contacts-info">
+                        <p>Доставляем товары из заграницы в Россию</p>
+                        <p>Стоимость от 550 рублей за заказ</p>
+                        <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+                    </div>
+                    <div class="header-contacts-call">
+                        <h2>+7 (800) 123 45-67</h2>
+                        <p>Звонки по России бесплатны</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav-links">
                     <a href="">Калькулятор</a>
                     <a href="">О нас</a>
                     <a href="">Гарантии</a>
                     <a href="">Отзывы</a>
-                </header-nav-links>
-            </header-nav>
-            <header-contacs>
-
-            </header-contacs>
+                </div>
+                <button class="btn-header-nav btn">Оставить заявку</button>
+            </div>
         </header>
+    </div>
+    <div class="container">
+        <main>
+            <section class="main-delivery">
+                <div class="main-delivery-info">
+                    <h2>Без проблемная доставка купленных вещей из США, Европы и Азии в Россию</h2>
+                    <p>Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко и удобно заказывать товары со всего мира и получать их в России</p>
+                    <img src="img/muzhik bez golovi derzhit korobku.png" alt="delivery img">
+                </div>
+                <div class="main-delivery-calc">
+                    <div class="main-delivery-calc-text">
+                        <h3>Калькулятор доставки</h3>
+                        <p>Посчитайте, сколько будет стоить перевозка шмали из зарубежа</p>
+                    </div>
+                    <form>
+                        <input type="text" class="name-placeholder" placeholder="Имя">
+                        <div class="form-sides">
+                            <div class="form-left-side">
+                                <input type="text" class="form-placeholder" placeholder="Почта">
+                                <input type="text" class="form-placeholder" placeholder="Общая площадь, м2">
+                                <input type="text" class="form-placeholder" placeholder="Страна покупки">
+                                <input type="text" class="form-placeholder" placeholder="Область доставки">
+                            </div>
+                            <div class="form-right-side">
+                                <input type="text" class="form-placeholder" placeholder="Телефон">
+                                <input type="text" class="form-placeholder" placeholder="Вес, кг">
+                                <input type="text" class="form-placeholder" placeholder="Город покупки">
+                                <input type="text" class="form-placeholder" placeholder="Город доставки">
+                            </div>
+                        </div>
+                        <button class="form-btn btn" type="button">Заказать расчёт<!--  кто в здравом уме будет писать букву Ё где либо, она создана только для открытия консоли в компьютерных игрушках --></button>
+                    </form>
+                </div>
+            </section>
+            <section class="main-advantages">
+                <h2 class="mid-title">Наши преимущества</h2>
+                <div class="main-advantages-block">
+                    <div class="main-advantages-item">
+                        <img src="img/preimushestva pic 1.svg" alt="advantages img">
+                        <div class="main-advantages-item-text">
+                            <h3>Растаможна груза</h3>
+                            <p>Мы берём на себя все формальности и бумажную волокиту, связанную с растаможкой груза</p>
+                        </div>
+                    </div>
+                    <div class="main-advantages-item">
+                        <img src="img/preimushestva pic 2.svg" alt="advantages img">
+                        <div class="main-advantages-item-text">
+                            <h3>Надёжная упаковка</h3>
+                            <p>Все товары упаковываются нашими специалистами с особым вниманием к деталям, гарантируя, что они дойдут в безопасности и в отличном состоянии</p>
+                        </div>
+                    </div>
+                    <div class="main-advantages-item">
+                        <img src="img/preimushestva pic 3.svg" alt="advantages img">
+                        <div class="main-advantages-item-text">
+                            <h3>Быстро и выгодно</h3>
+                            <p>Мы предлагаем быструю и выгодную доставку, чтобы вы могли насладиться покупками как можно скорее.</p>
+                        </div>
+                    </div>
+                    <div class="main-advantages-item">
+                        <img src="img/preimushestva pic 4.svg" alt="advantages img">
+                        <div class="main-advantages-item-text">
+                            <h3>Удобный сервис</h3>
+                            <p>Стремимся сделать процесс доставки максимально удобным для вас, чтобы опыт остался приятным и беззаботным</p>
+                        </div>
+                    </div>
+                    <div class="main-advantages-item">
+                        <img src="img/preimushestva pic 5.svg" alt="advantages img">
+                        <div class="main-advantages-item-text">
+                            <h3>Прозрачность работы</h3>
+                            <p>Мы предоставляем полный контроль над каждым этапом доставки, от момента заказа до момента прибытия заказа</p>
+                        </div>
+                    </div>
+                    <div class="main-advantages-item">
+                        <img src="img/preimushestva pic 6.svg" alt="advantages img">
+                        <div class="main-advantages-item-text">
+                            <h3>Страхование груза</h3>
+                            <p>Наше страхование обеспечивает полную защиту и покрытие почти все неприятные и неожиданные ситуации</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-guarantess">
+                <h2 class="mid-title">Гарантии качества</h2>
+                <p>Наши гарантии качества включают в себя полный спектр документов, необходимых для ввоза и вывоза товаров, а также для успешного бизнеса на мировом рынке. 
+                Мы предоставляем вам надёжность и уверенность</p>
+            </section>
+        </main>
     </div>
 </body>
 </html>
