@@ -9,42 +9,65 @@
 <body>
     <div class="container">
         <header>
-            <div class="header-nav">
+            <div class="header-logo-contacts">
                 <div class="header-nav-logo">
                     <img src="img/logo.svg" alt="log">
                     <h1>FromBoards Delivery</h1>
                 </div>
+                <div class="header-contacs">
+                    <div class="header-contacts-info">
+                        <p>Доставляем товары из заграницы в Россию</p>
+                        <p>Стоимость от 550 рублей за заказ</p>
+                        <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+                    </div>
+                    <div class="header-contacts-call">
+                        <h2>+7 (800) 123 45-67</h2>
+                        <p>Звонки по России бесплатны</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
                 <div class="header-nav-links">
                     <a href="">Калькулятор</a>
                     <a href="">О нас</a>
                     <a href="">Гарантии</a>
                     <a href="">Отзывы</a>
                 </div>
-            </div>
-            <div class="header-contacs">
-                <div class="header-contacts-info">
-                    <p>Доставляем товары из заграницы в Россию</p>
-                    <p>Стоимость от 550 рублей за заказ</p>
-                    <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
-                </div>
-                <div class="header-contacts-call">
-                    <h2>+7 (800) 123 45-67</h2>
-                    <p>Звонки по России бесплатны</p>
-                    <button class="btn-main">Оставить заявку</button>
-                </div>
+                <button class="btn-header-nav btn">Оставить заявку</button>
             </div>
         </header>
     </div>
     <div class="container">
         <main>
-            <section>
+            <section class="main-delivery">
                 <div class="main-delivery-info">
                     <h2>Без проблемная доставка купленных вещей из США, Европы и Азии в Россию</h2>
                     <p>Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко и удобно заказывать товары со всего мира и получать их в России</p>
-                    <img src="" alt="delivery img">
+                    <img src="img/muzhik bez golovi derzhit korobku.png" alt="delivery img">
                 </div>
                 <div class="main-delivery-calc">
- suka
+                    <div class="main-delivery-calc-text">
+                        <h3>Калькулятор доставки</h3>
+                        <p>Посчитайте, сколько будет стоить перевозка шмали из зарубежа</p>
+                    </div>
+                    <form>
+                        <input type="text" class="name-placeholder" placeholder="Имя">
+                        <div class="form-sides">
+                            <div class="form-left-side">
+                                <input type="text" class="form-placeholder" placeholder="Почта">
+                                <input type="text" class="form-placeholder" placeholder="Общая площадь, м2">
+                                <input type="text" class="form-placeholder" placeholder="Страна покупки">
+                                <input type="text" class="form-placeholder" placeholder="Область доставки">
+                            </div>
+                            <div class="form-right-side">
+                                <input type="text" class="form-placeholder" placeholder="Телефон">
+                                <input type="text" class="form-placeholder" placeholder="Вес, кг">
+                                <input type="text" class="form-placeholder" placeholder="Город покупки">
+                                <input type="text" class="form-placeholder" placeholder="Город доставки">
+                            </div>
+                        </div>
+                        <button class="form-btn btn" type="button">Заказать расчёт<!--  кто в здравом уме будет писать букву Ё где либо, она создана только для открытия консоли в компьютерных игрушках --></button>
+                    </form>
                 </div>
             </section>
         </main>
