@@ -51,19 +51,37 @@
                         <p>Посчитайте, сколько будет стоить перевозка шмали из зарубежа</p>
                     </div>
                     <form>
-                        <input type="text" class="name-placeholder" placeholder="Имя">
+                        <label for="name">
+                            <input type="text" id="name" class="name-placeholder" placeholder="Имя">
+                        </label>
                         <div class="form-sides">
                             <div class="form-left-side">
-                                <input type="text" class="form-placeholder" placeholder="Почта">
-                                <input type="text" class="form-placeholder" placeholder="Общая площадь, м2">
-                                <input type="text" class="form-placeholder" placeholder="Страна покупки">
-                                <input type="text" class="form-placeholder" placeholder="Область доставки">
+                                <label for="mail">
+                                    <input type="text" id="mail" class="form-placeholder" placeholder="Почта">
+                                </label>
+                                <label for="area">
+                                    <input type="text" id="area" class="form-placeholder" placeholder="Общая площадь, м2">
+                                </label>
+                                <label for="from-country">
+                                    <input type="text" id="from-country" class="form-placeholder" placeholder="Страна покупки">
+                                </label>
+                                <label for="delivery-to-country">
+                                    <input type="text" id="delivery-to" class="form-placeholder" placeholder="Область доставки">
+                                </label>
                             </div>
                             <div class="form-right-side">
-                                <input type="text" class="form-placeholder" placeholder="Телефон">
-                                <input type="text" class="form-placeholder" placeholder="Вес, кг">
-                                <input type="text" class="form-placeholder" placeholder="Город покупки">
-                                <input type="text" class="form-placeholder" placeholder="Город доставки">
+                                <label for="phone-number">
+                                    <input type="text" id="phone-number" class="form-placeholder" placeholder="Телефон">
+                                </label>
+                                <label for="weight">
+                                    <input type="text" id="weight" class="form-placeholder" placeholder="Вес, кг">
+                                </label>
+                                <label for="from-city">
+                                    <input type="text" id="from-city" class="form-placeholder" placeholder="Город покупки">
+                                </label>
+                                <label for="delivery-to-city">
+                                    <input type="text" id="delivery-to-city" class="form-placeholder" placeholder="Город доставки">
+                                </label>
                             </div>
                         </div>
                         <button class="form-btn btn" type="button">Заказать расчёт<!--  кто в здравом уме будет писать букву Ё где либо, она создана только для открытия консоли в компьютерных игрушках --></button>
@@ -143,7 +161,57 @@
                 </div>
                 <button class="btn-main-guarantess btn">Показать больше документов</button>
             </section>
+            <section class="main-reviews">
+                <h2 class="mid-title">Отзывы</h2>
+                <div class="main-reviews-block">
+                    <button class="main-reviews-block-switch"><img src="img/Vector left.svg" alt="switch"></button>
+                    <div class="main-reviews-block-list">
+                        <div class="main-reviews-block-list-item active">
+                            <p>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</p>
+                            <p class="reviews-person-name">Анна</p>
+                        </div>
+                        <div class="main-reviews-block-list-item active">
+                            <p>Я уже несколько лет заказываю дизайнерскую одежду из Франции через ваш сервис, и он никогда меня не подводил. Важно иметь надёжную компанию, которая позаботится о вашем заказе и предоставит все необходимые документы для ввоза в Россию</p>
+                            <p class="reviews-person-name">Алексей</p>
+                        </div>
+                    </div>
+                    <button class="main-reviews-block-switch"><img src="img/Vector right.svg" alt="switch"></button>
+                </div>
+            </section>
+            <section class="main-faq">
+                <h2 class="mid-title">Остались вопросы?</h2>
+                <form>
+                    <div class="form-sides">
+                        <div class="form-left-side">
+                            <label for="contact-name">
+                                <input type="text" id="contact-name" class="form-placeholder" placeholder="Имя">
+                            </label>
+                            <label for="contact-phone-number">
+                                <input type="text" id="contact-phone-number" class="form-placeholder" placeholder="Телефон">
+                            </label>
+                        </div>
+                        <div class="form-right-side">
+                            <label for="contact-mail">
+                                <input type="text" id="contact-mail" class="form-placeholder" placeholder="Почта">
+                            </label>
+                            <label for="contact-theme">
+                                <input type="text" id="contact-theme" class="form-placeholder" placeholder="Тема вопроса">
+                            </label>
+                        </div>
+                    </div>
+                    <label for="contact-msg">
+                        <textarea type="text" id="contact-msg" class="msg-placeholder" placeholder="Сообщение..."></textarea>
+                    </label>
+                    
+                    <button class="form-btn btn" type="button">Оставить заявку</button>
+                </form>
+            </section>
         </main>
+    </div>
+    <div class="container">
+        <footer>
+            
+        </footer>
     </div>
 </body>
 </html>

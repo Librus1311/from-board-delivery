@@ -155,6 +155,50 @@ header{
     gap: 5px;
 }
 
+/* MAIN REVIEWS */
+
+.main-reviews-block{
+    margin-top: 65px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.main-reviews-block-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+}
+
+.main-reviews-block-list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 540px;
+    height: 200px;
+}
+
+/* MAIN FAQ */
+
+.main-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 28%;
+    margin: 0 auto;
+    margin-bottom: 135px;
+    margin-top: 60px;
+}
+
+.main-faq form{
+    margin-top: 30px;
+}
+
 /* FORM */
 
 .form-sides{
@@ -198,6 +242,18 @@ header{
     padding-left: 10px;
 }
 
+.msg-placeholder{
+    border-radius: 5px;
+    border: 1px solid var(--black-color);
+
+    height: 150px;
+    width: 100%;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
 /* BUTTONS */
 
 .btn{
@@ -206,6 +262,8 @@ header{
 
     border-radius: 5px;
     border: none;
+
+    cursor: pointer;
 }
 
 .btn-header-nav{
@@ -220,7 +278,15 @@ header{
 }
 
 .btn-main-guarantess{
-    margin-top: 35px;
+    display: block;
+    
+    margin: 35px auto 0;
+}
+
+.main-reviews-block-switch{
+    border: none;
+
+    cursor: pointer;
 }
 
 /* TEXT */
