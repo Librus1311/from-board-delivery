@@ -15,6 +15,9 @@
     --purple-color: #8b5cf6;
     --white-color: #fff;
     --black-color: black;
+    --dark-color: #111827;
+    --light-grey-color: #606775;
+    --dark-grey-color: #3c4554;
 }
 
 a{
@@ -199,6 +202,66 @@ header{
     margin-top: 30px;
 }
 
+/* FOOTER */
+
+footer{
+    background: var(--dark-color);
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-main-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--white-color);
+}
+
+.footer-main-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-main-links{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-main-links a{
+    color: var(--white-color);
+}
+
+.footer-main-contacts{
+
+}
+
+.footer-sub{
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-sub-text{
+    color: var(--dark-grey-color);
+}
+
+.footer-sub-design p{
+    text-align: right;
+    color: var(--light-grey-color);
+}
+
+.footer-sub-design p span{
+    border-left: 1px solid var(--light-grey-color);
+
+    padding-left: 4px;
+}
+
 /* FORM */
 
 .form-sides{
@@ -281,6 +344,7 @@ header{
     display: block;
     
     margin: 35px auto 0;
+    padding: 15px 30px;
 }
 
 .main-reviews-block-switch{
