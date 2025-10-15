@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
 .container{
     max-width: 1920px;
 
@@ -19,6 +23,7 @@
     --light-grey-color: #606775;
     --dark-grey-color: #3c4554;
     --grey-bg-color: #e5e7eb;
+    --btn-hover-color: #a78bfa
 }
 
 a{
@@ -43,6 +48,13 @@ header{
     display: flex;
     align-items: center;
     gap: 5px;
+
+    cursor: pointer;
+}
+
+.header-nav-logo:hover{
+    color: var(--purple-color);
+    transition: color 0.5s;
 }
 
 .header-contacs{
@@ -65,6 +77,14 @@ header{
     padding-left: 10px;
 }
 
+.header-contacts-call h2{
+    font-size: 32px;
+}
+
+.header-contacts-call p{
+    font-size: 24px;
+}
+
 .header-nav{
     display: flex;
     align-items: center;
@@ -78,6 +98,15 @@ header{
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+.header-nav-links a{
+    font-weight: 700;
+}
+
+.header-nav-links a:hover{
+    color: var(--purple-color);
+    transition: color 0.5s;
 }
 
 
@@ -103,16 +132,32 @@ main{
     width: 50%;
 }
 
+.main-delivery-info h2{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.main-delivery-info p{
+    font-size: 20px;
+}
+
 .main-delivery-calc{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 130px;
+
+    width: 48%;
+
+    background: var(--white-color);
+
+    border-radius: 10px;
 }
 
 .main-delivery-calc-text{
     text-align: center;
+
     margin-bottom: 30px;
 }
 
@@ -142,6 +187,13 @@ main{
 
 .main-advantages-item h3{
     margin-bottom: 10px;
+
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.main-advantages-item p{
+    font-size: 16px;
 }
 
 /* MAIN GUARANTESS */
@@ -155,6 +207,12 @@ main{
 
 .main-guarantess-text h2{
     margin-bottom: 10px;
+}
+
+.main-guarantess-text p{
+    font-size: 16px;
+
+    margin-top: 20px;
 }
 
 .main-guarantess-block{
@@ -171,20 +229,37 @@ main{
     gap: 5px;
 }
 
+.main-guarantess-block-item img{
+    height: 500px;
+    width: 400px;
+}
+
+.main-guarantess-block-item h4{
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
 /* MAIN REVIEWS */
 
 .main-reviews-block{
     margin-top: 65px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 90px;
 }
 
 .main-reviews-block-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 65px;
 }
@@ -194,8 +269,25 @@ main{
     flex-direction: column;
     justify-content: space-between;
 
-    width: 540px;
-    height: 200px;
+    width: 40%;
+    min-height: 300px;
+    padding: 20px;
+
+    background: var(--white-color);
+
+    border-radius: 10px;
+}
+
+.main-reviews-person-text{
+    font-size: 24px;
+    font-weight: 650;
+}
+
+.reviews-person-name{
+    color: var(--light-grey-color);
+
+    font-weight: 300;
+    font-size: 24px;
 }
 
 /* MAIN FAQ */
@@ -239,6 +331,13 @@ footer{
     display: flex;
     align-items: center;
     gap: 5px;
+
+    cursor: pointer;
+}
+
+.footer-main-logo:hover{
+    color: var(--purple-color);
+    transition: color 0.5s;
 }
 
 .footer-main-links{
@@ -248,11 +347,26 @@ footer{
 }
 
 .footer-main-links a{
+    font-size: 20px;
+
     color: var(--white-color);
 }
 
-.footer-main-contacts{
+.footer-main-links a:hover{
+    color: var(--purple-color);
+    transition: color 0.5s;
+}
 
+.footer-main-contacts{
+    text-align: center;
+}
+
+.footer-main-contacts h2{
+    font-size: 36px;
+}
+
+.footer-main-contacts p{
+    font-size: 24px;
 }
 
 .footer-sub{
@@ -311,6 +425,11 @@ footer{
     margin-bottom: 25px;
 }
 
+.name-placeholder:hover{
+    border: 1px solid var(--purple-color);
+    transition: border 0.5s;
+}
+
 .form-placeholder{
     border-radius: 5px;
     border: 1px solid var(--black-color);
@@ -319,6 +438,11 @@ footer{
     width: 235px;
 
     padding-left: 10px;
+}
+
+.form-placeholder:hover{
+    border: 1px solid var(--purple-color);
+    transition: border 0.5s;
 }
 
 .msg-placeholder{
@@ -333,6 +457,11 @@ footer{
     margin-top: 25px;
 }
 
+.msg-placeholder:hover{
+    border: 1px solid var(--purple-color);
+    transition: border 0.5s;
+}
+
 /* BUTTONS */
 
 .btn{
@@ -345,15 +474,27 @@ footer{
     cursor: pointer;
 }
 
+.btn:hover{
+    background: var(--btn-hover-color);
+    transition: background 0.5s;
+}
+
 .btn-header-nav{
     padding: 10px 30px;
+
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .form-btn{
     width: 100%;
 
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 10px 180px;
+
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .btn-main-guarantess{
@@ -361,12 +502,17 @@ footer{
     
     margin: 35px auto 0;
     padding: 15px 30px;
+
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .main-reviews-block-switch{
     border: none;
 
     cursor: pointer;
+
+    background: var(--grey-bg-color);
 }
 
 /* TEXT */
@@ -375,4 +521,11 @@ footer{
     margin-top: 70px;
 
     text-align: center;
+
+    font-weight: 900;
+    font-size: 30px;
 }
+
+
+/* MEDIA */
+
