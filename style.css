@@ -11,6 +11,7 @@ body{
 
 .container{
     max-width: 1540px;
+    padding: 0 10px;
 
     margin: 0 auto;
 }
@@ -560,6 +561,124 @@ footer{
     font-size: 30px;
 }
 
+/* BURGER MENU GIVE ME ENERGY */
+
+.header-burger-menu{
+    display: none;
+}
+
+.burger-menu-btn {
+    display: block;
+    
+    margin-right: 40px;
+
+    width: 20px;
+    height: 20px;
+
+    position: relative;
+    top: 60px;
+
+    cursor: pointer;
+}
+
+.burger-menu-btn,
+.burger-menu-btn::after,
+.burger-menu-btn::before{
+    content: '';
+
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    position: absolute;
+    right: 0;
+
+    background: var(--purple-color);
+}
+
+.burger-menu-btn::before {
+    height: 3px;
+    top: -6px;
+}
+
+.burger-menu-btn::after {
+    top: 6px;
+}
+
+.burger-menu-btn.active::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.burger-menu-btn.active::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.burger-menu-btn.active{
+    background-color: transparent;
+}
+
+.burger-menu{
+    position: absolute;
+    top: -100%;
+
+    padding-bottom: 170px;
+
+    max-width: 620px;
+    height: 150px;
+
+    transition: top 0.5s ease-in-out;
+
+    background: var(--white-color);
+}
+
+.burger-menu.active{
+    top: 130px;
+}
+
+.burger-header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+    
+    border-top: 3px solid var(--purple-color);
+    border-bottom: 3px solid var(--purple-color);
+}
+
+.burger-header-nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.burger-header-nav-links a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.burger-header-nav-links a:hover{
+    color: var(--purple-color);
+    transition: color 0.5s;
+}
+
+.burger-header-media-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.burger-header-media-info p{
+    text-align: center;
+    font-size: 14px;
+}
+
 
 /* MEDIA */
 
@@ -674,6 +793,10 @@ footer{
         display: none;
     }
 
+    .header-contacts-call{
+        text-align: right;
+    }
+
     .header-nav{
         border-top: 1px solid var(--purple-color);
         border-bottom: 1px solid var(--purple-color);
@@ -785,6 +908,10 @@ footer{
         font-size: 20px;
     }
 
+    .header-contacts-call h2{
+        padding-right: 40px;
+    }
+
     .header-contacts-call p{
         display: none;
     }
@@ -795,6 +922,10 @@ footer{
 
     .header-media-info{
         display: none;
+    }
+
+    .header-burger-menu{
+        display: block;
     }
 
     .main-advantages-block{
