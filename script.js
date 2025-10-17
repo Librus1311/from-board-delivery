@@ -2,10 +2,12 @@
 
 const menuIcon = document.querySelector('.burger-menu-btn');
 const menu = document.querySelector('.burger-menu');
+const main = document.querySelector('main')
 
 menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('active');
     menu.classList.toggle('active');
+    main.classList.toggle('active')
 });
 
 // REVIEW SLIDER 

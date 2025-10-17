@@ -9,6 +9,10 @@ body{
     font-family: "Noto Sans", sans-serif;
 }
 
+main.active{
+    filter: brightness(70%);
+}
+
 .container{
     max-width: 1540px;
     padding: 0 10px;
@@ -626,6 +630,7 @@ footer{
 .burger-menu{
     position: absolute;
     top: -100%;
+    z-index: 100;
 
     padding-bottom: 170px;
     padding-left: 50px;
