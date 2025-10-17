@@ -712,6 +712,14 @@ footer{
         text-align: right;
     }
 
+    .header-contacts-call h2{
+        font-size: 30px;
+    }
+
+    .header-contacts-call p{
+        font-size: 20px;
+    }
+
     .main-delivery-info{
         display: flex;  
         flex-direction: row;
