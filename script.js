@@ -28,20 +28,23 @@ function showReviews(index) {
     reviewLeft.innerHTML = '';
     reviewRight.innerHTML = '';
     
+    // Определяем индексы для левого и правого отзыва
+    const leftIndex = index * 2;
+    const rightIndex = leftIndex + 1;
+    
     // Показываем левый отзыв
-    reviewLeft.appendChild(reviews[index].cloneNode(true));
+    if (leftIndex < reviews.length) {
+        reviewLeft.appendChild(reviews[leftIndex].cloneNode(true));
+    }
     
     // Показываем правый отзыв
-    if (index + 1 < reviews.length) {
-        reviewRight.appendChild(reviews[index + 1].cloneNode(true));
+    if (rightIndex < reviews.length) {
+        reviewRight.appendChild(reviews[rightIndex].cloneNode(true));
     } else {
-        reviewLeft.classList.add('single-review');
-        reviewRight.classList.add('none-review')
-    }
-
-    if (reviewRight.innerHTML.trim() !== '') {
-        reviewLeft.classList.remove('single-review');
-        reviewRight.classList.remove('none-review');
+        // Если правый отзыв не существует, копируем левый
+        if (leftIndex < reviews.length) {
+            reviewRight.appendChild(reviews[leftIndex].cloneNode(true));
+        }
     }
 }
 
@@ -54,11 +57,16 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-    if (currentIndex < reviews.length - 1) {
+    // Вычисляем максимальное значение индекса
+    const maxIndex = Math.ceil(reviews.length / 2) - 1;
+    
+    if (currentIndex < maxIndex) {
         currentIndex++;
         showReviews(currentIndex);
     }
 });
 
-// Инициализация - показываем первые два отзыва
-showReviews(0);
+// Инициализация при загрузке
+window.onload = () => {
+    showReviews(currentIndex);
+};
