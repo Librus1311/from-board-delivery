@@ -254,9 +254,13 @@ main {
     gap: 5px;
 }
 
-/* .main-guarantess-block-item img{
-    height: 100%;
-} */
+.main-guarantess-block-item:hover .guarantess-img{
+    transform: scale(1.1);
+}
+
+.guarantess-img{
+    transition: 0.9s;
+}
 
 .main-guarantess-block-item h4 {
     margin-top: 15px;
